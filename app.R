@@ -80,11 +80,6 @@ server <- function(input, output) {
            title=paste0("Median ", input$incomeSource, " by geography, ",input$refYears[2]))
   })
   
-  
-  output$plotid <- renderPlot({
-    # R code to create plot
-  })
-  
 }
 
 shinyApp(ui, server)
